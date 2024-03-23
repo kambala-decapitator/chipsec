@@ -113,6 +113,8 @@ class OsHelper:
             ret = self.getHelper("linuxhelper")
         elif self.is_windows():
             ret = self.getHelper("windowshelper")
+        elif self.is_macos():
+            ret = self.getHelper("osxhelper")
         elif self.is_efi():
             ret = self.getHelper("efihelper")
         elif self.is_dal():
